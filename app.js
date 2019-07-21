@@ -22,7 +22,7 @@ const server = http.createServer(function(req,res){
     var path = url.parse(path,true).pathname;
 
      
-        if(path =="/"||"/overview"){
+        if(path =="/"||path=="/overview"){
 
             var cards = "";
             for(var i=0;i<obj.length;i++){
