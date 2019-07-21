@@ -21,10 +21,8 @@ const server = http.createServer(function(req,res){
     // var id = url.parse(path,true).query.id;
     var path = url.parse(path,true).pathname;
 
-     if(path=="/"){
-         res.end("home")
-     }
-     else if(path =="/overview"){
+     
+        if(path =="/"||"/overview"){
 
             var cards = "";
             for(var i=0;i<obj.length;i++){
